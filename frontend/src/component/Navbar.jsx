@@ -9,7 +9,7 @@ const Navbar = () => {
         justifyContent: 'space-between',
         paddingX: 50,
         backgroundColor: '#3E81FF',
-        height: '70px',
+        height: '90px',
         mt: 2,
         alignItems: 'center'
       }}
@@ -31,9 +31,9 @@ const Navbar = () => {
         >
           <Typography
             className='text'
+            variant='h5'
             sx={{
               color: '#fff',
-              fontSize: 20,
               fontWeight: 'bold',
             }}
           >
@@ -57,9 +57,9 @@ const Navbar = () => {
         >
           <Typography
             className='text'
+            variant='h5'
             sx={{
               color: '#fff',
-              fontSize: 20,
               fontWeight: 'bold',
             }}
           >
@@ -83,9 +83,9 @@ const Navbar = () => {
         >
           <Typography
             className='text'
+            variant='h5'
             sx={{
               color: '#fff',
-              fontSize: 20,
               fontWeight: 'bold',
             }}
           >
@@ -109,9 +109,9 @@ const Navbar = () => {
         >
           <Typography
             className='text'
+            variant='h5'
             sx={{
               color: '#fff',
-              fontSize: 20,
               fontWeight: 'bold',
             }}
           >
@@ -135,9 +135,9 @@ const Navbar = () => {
         >
           <Typography
             className='text'
+            variant='h5'
             sx={{
               color: '#fff',
-              fontSize: 20,
               fontWeight: 'bold',
             }}
           >
