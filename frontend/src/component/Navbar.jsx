@@ -115,7 +115,7 @@ const Navbar = () => {
               fontWeight: 'bold',
             }}
           >
-            Giới thiệu
+            Giới Thiệu
           </Typography>
         </Box>
         <Box
@@ -141,7 +141,7 @@ const Navbar = () => {
               fontWeight: 'bold',
             }}
           >
-            Liên hệ
+            Liên Hệ
           </Typography>
         </Box>
     </Box>
