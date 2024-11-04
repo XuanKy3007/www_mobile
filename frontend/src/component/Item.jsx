@@ -1,12 +1,12 @@
 import React from "react";
 import { Box, Card, Typography, CardMedia, CardContent } from "@mui/material";
 import phone from "../assets/phone.png";
-const Item = (props) => {
+const Item = ( {name, image, sale, new_price, old_price} ) => {
   return (
     <Box>
       <Card sx={{ width: 350 }}>
         <CardMedia
-          image={phone}
+          image={image}
           sx={{
             width: "100%",
             height: "300px",
@@ -32,7 +32,7 @@ const Item = (props) => {
             mt: -35,
           }}
         >
-          <Typography>10%</Typography>
+          <Typography>{sale}</Typography>
         </Box>
         <CardContent sx={{ width: 350 }}>
           <Typography
@@ -41,7 +41,7 @@ const Item = (props) => {
               fontSize: 20,
             }}
           >
-            Phone 01
+            {name}
           </Typography>
           <Box
             sx={{
@@ -57,7 +57,7 @@ const Item = (props) => {
                 fontSize: 18,
               }}
             >
-              80.000.00
+              {new_price}
             </Typography>
             <Typography
               sx={{
@@ -65,7 +65,7 @@ const Item = (props) => {
                 color: "gray",
               }}
             >
-              100.000.00
+              {old_price}
             </Typography>
           </Box>
         </CardContent>
