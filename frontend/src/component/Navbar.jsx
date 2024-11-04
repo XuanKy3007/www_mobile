@@ -48,18 +48,19 @@ const Navbar = () => {
             alignItems: 'center',
             justifyContent: 'center',
             '&:hover':{
-              backgroundColor: '#fff',
+              backgroundColor: '#fff', 
+              '& .text': {
+                color: 'black',
+              },
             }
           }}
         >
           <Typography
+            className='text'
             sx={{
               color: '#fff',
               fontSize: 20,
               fontWeight: 'bold',
-              '&:hover':{
-                color: '#000'
-              }
             }}
           >
             Danh Mục
@@ -73,18 +74,19 @@ const Navbar = () => {
             alignItems: 'center',
             justifyContent: 'center',
             '&:hover':{
-              backgroundColor: '#fff',
+              backgroundColor: '#fff', 
+              '& .text': {
+                color: 'black',
+              },
             }
           }}
         >
           <Typography
+            className='text'
             sx={{
               color: '#fff',
               fontSize: 20,
               fontWeight: 'bold',
-              '&:hover':{
-                color: '#000'
-              }
             }}
           >
             Khuyến Mãi
@@ -98,18 +100,19 @@ const Navbar = () => {
             alignItems: 'center',
             justifyContent: 'center',
             '&:hover':{
-              backgroundColor: '#fff',
+              backgroundColor: '#fff', 
+              '& .text': {
+                color: 'black',
+              },
             }
           }}
         >
           <Typography
+            className='text'
             sx={{
               color: '#fff',
               fontSize: 20,
               fontWeight: 'bold',
-              '&:hover':{
-                color: '#000'
-              }
             }}
           >
             Giới thiệu
@@ -123,18 +126,19 @@ const Navbar = () => {
             alignItems: 'center',
             justifyContent: 'center',
             '&:hover':{
-              backgroundColor: '#fff',
+              backgroundColor: '#fff', 
+              '& .text': {
+                color: 'black',
+              },
             }
           }}
         >
           <Typography
+            className='text'
             sx={{
               color: '#fff',
               fontSize: 20,
               fontWeight: 'bold',
-              '&:hover':{
-                color: '#000'
-              }
             }}
           >
             Liên hệ
