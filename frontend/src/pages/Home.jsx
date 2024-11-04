@@ -1,14 +1,16 @@
 import React from "react";
-
+import banner from '../assets/banner.png'
 import { Box, Typography, Button, Divider } from "@mui/material";
 import Item from "../component/Item";
 const Home = () => {
   return (
     <Box p={4}>
+      <img src={banner} alt="" style={{width: '100%', height: 550}}/>
       <Box
         sx={{
           display: 'flex',
-          justifyContent: 'space-between'
+          justifyContent: 'space-between',
+          mt: 5
         }}
       >
         <Box>
