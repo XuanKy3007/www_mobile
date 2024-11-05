@@ -3,7 +3,13 @@ import banner from '../assets/banner.png'
 import { Box, Typography, Button, Divider } from "@mui/material";
 import Item from "../component/Item";
 import phone from "../assets/phone.png";
+
+import { useNavigate } from "react-router-dom";
 const Home = () => {
+  const navigate = useNavigate(); 
+  const handleItemClick = () => {
+    navigate("/detail");
+  };
   return (
     <Box p={4}>
       <img src={banner} alt="" style={{width: '100%', height: 550}}/>
@@ -43,12 +49,12 @@ const Home = () => {
           mt: 2,
         }}
       >
-        <Item name="Phone 1" image={phone} sale="10%" new_price="80.000.00" old_price="100.00.000"/>
-        <Item name="Phone 1" image={phone} sale="10%" new_price="80.000.00" old_price="100.00.000"/>
-        <Item name="Phone 1" image={phone} sale="10%" new_price="80.000.00" old_price="100.00.000"/>
-        <Item name="Phone 1" image={phone} sale="10%" new_price="80.000.00" old_price="100.00.000"/>
-        <Item name="Phone 1" image={phone} sale="10%" new_price="80.000.00" old_price="100.00.000"/>
-        <Item name="Phone 1" image={phone} sale="10%" new_price="80.000.00" old_price="100.00.000"/>
+        <Item name="Phone 1" image={phone} sale="10%" new_price="80.000.00" old_price="100.00.000" onClick={handleItemClick}/>
+        <Item name="Phone 1" image={phone} sale="10%" new_price="80.000.00" old_price="100.00.000" onClick={handleItemClick}/>
+        <Item name="Phone 1" image={phone} sale="10%" new_price="80.000.00" old_price="100.00.000" onClick={handleItemClick}/>
+        <Item name="Phone 1" image={phone} sale="10%" new_price="80.000.00" old_price="100.00.000" onClick={handleItemClick}/>
+        <Item name="Phone 1" image={phone} sale="10%" new_price="80.000.00" old_price="100.00.000" onClick={handleItemClick}/>
+        <Item name="Phone 1" image={phone} sale="10%" new_price="80.000.00" old_price="100.00.000" onClick={handleItemClick}/>
       </Box>
       <Box
         sx={{
@@ -86,12 +92,12 @@ const Home = () => {
           mt: 2,
         }}
       >
-        <Item name="Phone 1" image={phone} sale="10%" new_price="80.000.00" old_price="100.00.000"/>
-        <Item name="Phone 1" image={phone} sale="10%" new_price="80.000.00" old_price="100.00.000"/>
-        <Item name="Phone 1" image={phone} sale="10%" new_price="80.000.00" old_price="100.00.000"/>
-        <Item name="Phone 1" image={phone} sale="10%" new_price="80.000.00" old_price="100.00.000"/>
-        <Item name="Phone 1" image={phone} sale="10%" new_price="80.000.00" old_price="100.00.000"/>
-        <Item name="Phone 1" image={phone} sale="10%" new_price="80.000.00" old_price="100.00.000"/>
+        <Item name="Phone 1" image={phone} sale="10%" new_price="80.000.00" old_price="100.00.000" onClick={handleItemClick}/>
+        <Item name="Phone 1" image={phone} sale="10%" new_price="80.000.00" old_price="100.00.000" onClick={handleItemClick}/>
+        <Item name="Phone 1" image={phone} sale="10%" new_price="80.000.00" old_price="100.00.000" onClick={handleItemClick}/>
+        <Item name="Phone 1" image={phone} sale="10%" new_price="80.000.00" old_price="100.00.000" onClick={handleItemClick}/>
+        <Item name="Phone 1" image={phone} sale="10%" new_price="80.000.00" old_price="100.00.000" onClick={handleItemClick}/>
+        <Item name="Phone 1" image={phone} sale="10%" new_price="80.000.00" old_price="100.00.000" onClick={handleItemClick}/>
       </Box>
     </Box>
   );

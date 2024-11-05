@@ -1,6 +1,8 @@
 import { Box, Button, ButtonGroup, Checkbox, Typography } from "@mui/material";
 import Item from "../component/Item";
 import phone from "../assets/phone.png";
+
+import { useNavigate } from "react-router-dom";
 const buttons = [
   <Button sx={{ width: "100%", fontSize: 20 }}>Sản phẩm mới</Button>,
   <Button sx={{ width: "100%", fontSize: 20 }}>Ưu đãi</Button>,
@@ -13,7 +15,13 @@ const buttons = [
   <Button sx={{ width: "100%", fontSize: 20 }}>Nokia</Button>,
   <Button sx={{ width: "100%", fontSize: 20 }}>Sony</Button>,
 ];
+ 
 const Category = () => {
+  const navigate = useNavigate(); 
+  const handleItemClick = () => {
+    navigate("/detail");
+  };
+
   return (
     <Box p={5} sx={{ display: "flex" }}>
       <Box
@@ -78,6 +86,7 @@ const Category = () => {
           new_price={"80.000.00"}
           old_price={"100.000.00"}
           sale={"10%"}
+          onClick={handleItemClick}
         ></Item>
         <Item
           name={"Phone01"}
@@ -85,6 +94,7 @@ const Category = () => {
           new_price={"80.000.00"}
           old_price={"100.000.00"}
           sale={"10%"}
+          onClick={handleItemClick}
         ></Item>
         <Item
           name={"Phone01"}
@@ -92,6 +102,7 @@ const Category = () => {
           new_price={"80.000.00"}
           old_price={"100.000.00"}
           sale={"10%"}
+          onClick={handleItemClick}
         ></Item>
         <Item
           name={"Phone01"}
@@ -99,6 +110,7 @@ const Category = () => {
           new_price={"80.000.00"}
           old_price={"100.000.00"}
           sale={"10%"}
+          onClick={handleItemClick}
         ></Item>
         <Item
           name={"Phone01"}
@@ -106,6 +118,7 @@ const Category = () => {
           new_price={"80.000.00"}
           old_price={"100.000.00"}
           sale={"10%"}
+          onClick={handleItemClick}
         ></Item>
         <Item
           name={"Phone01"}
@@ -113,6 +126,7 @@ const Category = () => {
           new_price={"80.000.00"}
           old_price={"100.000.00"}
           sale={"10%"}
+          onClick={handleItemClick}
         ></Item>
       </Box>
     </Box>
