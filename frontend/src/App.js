@@ -6,6 +6,7 @@ import Footer from './component/Footer';
 import Category from './pages/Category';
 import Contact from './pages/Contact';
 import Product from './pages/Product_details';
+import AboutUs from './pages/AboutUs';
 function App() {
   return (
     <BrowserRouter>
@@ -16,6 +17,7 @@ function App() {
         <Route path='/category' element={<Category />}/>
         <Route path='/contact' element={<Contact />}/>
         <Route path='/detail' element={<Product/>}/>
+        <Route path='/aboutus' element={<AboutUs />}/>
       </Routes>
       <Footer />
     </BrowserRouter>

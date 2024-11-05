@@ -8,9 +8,9 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 
 import CameraAltIcon from '@mui/icons-material/CameraAlt';
 
-const Home = () => {
+const Contact = () => {
     return (
-        <Box display="flex" justifyContent="center" alignItems="center" minHeight="100vh">
+        <Box display="flex" justifyContent="center" alignItems="center" minHeight="80vh">
             <Box>
                 <Box sx={{
                     color: 'red',
@@ -25,7 +25,7 @@ const Home = () => {
                     backgroundColor: '#E2EEFF',
                     padding: 4,
                     borderRadius: 2,
-                    width: '400px'
+                    width: '600px'
                 }}>
                     <form>
                         <Box mb={2}>
@@ -66,7 +66,7 @@ const Home = () => {
                                 sx={{ backgroundColor: 'white', marginTop:"10px" }}
                             />
                         </Box>
-                        <Box sx={{ display: "flex", alignItems: "center", gap: 2, mt: 2 }}>
+                        <Box sx={{ display: "flex", alignItems: "center", mt: 2, justifyContent: 'space-between' }}>
                             <Button
                                 variant="contained"
                                 color="primary"
@@ -98,4 +98,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Contact;
