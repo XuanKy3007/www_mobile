@@ -64,7 +64,7 @@ const Header = () => {
           }}
         >
           <ShoppingCartIcon />
-          <Typography variant="body1">Tài khoản</Typography>
+          <Typography variant="body1">Giỏ hàng</Typography>
         </Box>
       </Box>
     </Box>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import { Link } from "react-dom";
+import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 const Navbar = () => {
   const navigate = useNavigate();
@@ -121,11 +121,14 @@ const Navbar = () => {
         }}
       >
         <Typography
+          component={Link}
+          to='/aboutus'
           className="text"
           variant="h5"
           sx={{
             color: "#fff",
             fontWeight: "bold",
+            textDecoration: 'none'
           }}
         >
           Giới Thiệu
@@ -148,11 +151,14 @@ const Navbar = () => {
         }}
       >
         <Typography
+          component={Link}
+          to='/contact'
           className="text"
           variant="h5"
           sx={{
             color: "#fff",
             fontWeight: "bold",
+            textDecoration: 'none'
           }}
         >
           Liên Hệ
