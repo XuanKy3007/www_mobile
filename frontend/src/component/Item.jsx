@@ -1,9 +1,12 @@
 import React from "react";
 import { Box, Card, Typography, CardMedia, CardContent } from "@mui/material";
 import phone from "../assets/phone.png";
-const Item = ( {name, image, sale, new_price, old_price, onClick} ) => {
+import { Link } from 'react-router-dom';
+
+const Item = ( {id, name, image, sale, new_price, old_price} ) => {
   return (
-    <Box  onClick={onClick} sx={{ cursor: "pointer" }}>
+    <Link to={`/product/${id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+      <Box sx={{ cursor: "pointer" }}>
       <Card sx={{ width: 350 }}>
         <CardMedia
           image={image}
@@ -71,6 +74,7 @@ const Item = ( {name, image, sale, new_price, old_price, onClick} ) => {
         </CardContent>
       </Card>
     </Box>
+     </Link>
   );
 };
 

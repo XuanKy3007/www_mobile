@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, Button } from "@mui/material";
  
 const Product_detail = () => {
+    const [quantity, setQuantity] = useState(0);
+    const handleIncrement = () => {
+        setQuantity(prevQuantity => prevQuantity + 1);
+    };
+    const handleDecrement = () => {
+        setQuantity(prevQuantity => (prevQuantity > 0 ? prevQuantity - 1 : 0));
+    };
     return (
         <Box
             sx={{
@@ -63,11 +70,11 @@ const Product_detail = () => {
                     <Box sx={{ mb: 2 }}>
                         <p>Số lượng</p>
                         <Box sx={{display:"flex"}}>
-                            <Button sx={{ border: "1px black solid"}}>-</Button>
+                            <Button sx={{ border: "1px black solid"}} onClick={handleDecrement} >-</Button>
                             <Box sx={{ backgroundColor: '#FFF6F6', border:1, p:"5px 20px 0 20px"}}>
-                                <span>0</span>
+                                <span>{quantity}</span>
                             </Box>
-                            <Button sx={{ border: "1px black solid"}}>+</Button>
+                            <Button sx={{ border: "1px black solid"}}  onClick={handleIncrement}>+</Button>
                         </Box>
                     </Box>
                     <Button variant="contained" color="primary">Thêm vào giỏ hàng</Button>
