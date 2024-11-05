@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Button } from "@mui/material";
  
-const Home = () => {
+const Product_detail = () => {
     return (
         <Box
             sx={{
@@ -117,4 +117,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Product_detail;

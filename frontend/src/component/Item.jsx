@@ -1,9 +1,9 @@
 import React from "react";
 import { Box, Card, Typography, CardMedia, CardContent } from "@mui/material";
 import phone from "../assets/phone.png";
-const Item = ( {name, image, sale, new_price, old_price} ) => {
+const Item = ( {name, image, sale, new_price, old_price, onClick} ) => {
   return (
-    <Box>
+    <Box  onClick={onClick} sx={{ cursor: "pointer" }}>
       <Card sx={{ width: 350 }}>
         <CardMedia
           image={image}
