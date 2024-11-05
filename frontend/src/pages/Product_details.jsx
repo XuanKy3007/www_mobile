@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Button } from "@mui/material";
-
+ 
 const Home = () => {
     return (
         <Box
@@ -13,15 +13,13 @@ const Home = () => {
             }}>
             <Box display="flex">
                 <Box sx={{ mt: "35px", textAlign: "center", mr: "180px" }}>
-                    {/* Hình ảnh sản phẩm */}
+
                     <Box sx={{ display: "flex", justifyContent: "center", gap: "10px", mb: 2 }}>
                         <img
                             src=""
                             style={{ width: "350px", height: "350px", borderRadius: "5px", backgroundColor: "#e0e0e0" }}
                         />
                     </Box>
-
-                    {/* Danh sách hình ảnh thu nhỏ */}
                     <Box sx={{ display: "flex", justifyContent: "center", gap: "10px", mb: 2 }}>
                         <img
                             src=""
