@@ -7,6 +7,9 @@ const Navbar = () => {
   const handleCategoryClick = () => {
     navigate("/category");
   };
+  const handleContactClick = () => {
+    navigate("/contact");
+  };
   const handleHomeClick = () => {
     navigate("/");
   };
@@ -129,6 +132,7 @@ const Navbar = () => {
         </Typography>
       </Box>
       <Box
+      onClick={handleContactClick}
         sx={{
           width: "150px",
           height: "50px",

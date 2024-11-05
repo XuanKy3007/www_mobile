@@ -92,7 +92,7 @@ const Home = () => {
                 <CameraAltIcon sx={{ width: "80%", height: "80%", color: "grey" }} />
             </Box> */}
             <Box ml={4} width="300px" height="350px" bgcolor="#f0f0f0" display="flex" justifyContent="center" alignItems="center">
-                <Box component="img" alt="Banner Placeholder" width="100%" />
+                <Box component="img" src="https://th.bing.com/th/id/OIP.VU6OJERkW29SfnwNfrOIGAHaFo?rs=1&pid=ImgDetMain" alt="Banner Placeholder" width="100%" />
             </Box>
         </Box>
     );
