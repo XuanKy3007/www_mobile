@@ -20,8 +20,6 @@ const Home = () => {
                             style={{ width: "350px", height: "350px", borderRadius: "5px", backgroundColor: "#e0e0e0" }}
                         />
                     </Box>
-
-                    {/* Danh sách hình ảnh thu nhỏ */}
                     <Box sx={{ display: "flex", justifyContent: "center", gap: "10px", mb: 2 }}>
                         <img
                             src=""
