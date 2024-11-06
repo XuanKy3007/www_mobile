@@ -61,6 +61,16 @@ const Discount = () => {
             GIỚI THIỆU
         </Typography>
         <Typography
+            variant='h4'
+            fontWeight={700}
+            mt={2}
+            sx={{
+                marginLeft: '40%'
+            }}
+        >
+            GIỚI THIỆU
+        </Typography>
+        <Typography
                 variant='h6'
                 fontWeight={600}
             >
