@@ -50,6 +50,16 @@ const Discount = () => {
           transition: 'transform 0.5s ease-in-out',
         }}
       />
+      <Typography
+            variant='h4'
+            fontWeight={700}
+            mt={2}
+            sx={{
+                marginLeft: '40%'
+            }}
+        >
+            GIỚI THIỆU
+        </Typography>
 
       {/* button */}
       <IconButton
