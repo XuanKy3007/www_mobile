@@ -60,6 +60,12 @@ const Discount = () => {
         >
             GIỚI THIỆU
         </Typography>
+        <Typography
+                variant='h6'
+                fontWeight={600}
+            >
+                Khám phá thế giới công nghệ với các mẫu điện thoại đẳng cấp
+            </Typography>
 
       {/* button */}
       <IconButton
