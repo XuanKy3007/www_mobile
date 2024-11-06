@@ -50,6 +50,32 @@ const Discount = () => {
           transition: 'transform 0.5s ease-in-out',
         }}
       />
+      <Typography
+            variant='h4'
+            fontWeight={700}
+            mt={2}
+            sx={{
+                marginLeft: '40%'
+            }}
+        >
+            GIỚI THIỆU
+        </Typography>
+        <Typography
+            variant='h4'
+            fontWeight={700}
+            mt={2}
+            sx={{
+                marginLeft: '40%'
+            }}
+        >
+            GIỚI THIỆU
+        </Typography>
+        <Typography
+                variant='h6'
+                fontWeight={600}
+            >
+                Khám phá thế giới công nghệ với các mẫu điện thoại đẳng cấp
+            </Typography>
 
       {/* button */}
       <IconButton
